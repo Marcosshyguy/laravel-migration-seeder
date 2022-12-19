@@ -19,6 +19,8 @@
 
     <main class="bg-light">
 
+        @yield('print')
+
     </main>
 
 </body>
