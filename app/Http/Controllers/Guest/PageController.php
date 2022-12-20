@@ -10,7 +10,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $trains = Train::whereDay('train_date', '=', '19')->get();
+        $trains = Train::whereDay('train_date', '>=', now())->get();
         return view('home', compact('trains'));
     }
 }
